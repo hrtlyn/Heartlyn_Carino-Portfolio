@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Heartlyn Carino</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gradient-to-br from-black via-blue-900 to-blue-800 text-white scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-blue-900/80 border-b border-blue-700">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 relative">
+    <a href="index.html" class="text-xl font-bold tracking-wide hover:text-blue-300 transition">Heartlyn Carino<span class="text-blue-400">.</span></a>
+
+    <!-- Hamburger for mobile -->
+    <input type="checkbox" id="menu-toggle" class="hidden" />
+    <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer z-50">☰</label>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 text-sm font-medium">
+      <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+      <li><a href="skills.html" class="hover:text-blue-300 transition">Skills</a></li>
+      <li><a href="projects.html" class="text-blue-400">Projects</a></li>
+      <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-blue-900 border-t border-blue-700 overflow-hidden max-h-0 transition-all duration-500 ease-in-out flex flex-col">
+      <li><a href="index.html" class="px-6 py-4 hover:bg-blue-800 transition">Home</a></li>
+      <li><a href="about.html" class="px-6 py-4 hover:bg-blue-800 transition">About</a></li>
+      <li><a href="skills.html" class="px-6 py-4 hover:bg-blue-800 transition">Skills</a></li>
+      <li><a href="projects.html" class="px-6 py-4 text-blue-400 hover:bg-blue-800 transition">Projects</a></li>
+      <li><a href="contact.html" class="px-6 py-4 hover:bg-blue-800 transition">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Projects Section -->
+<main class="pt-24 page">
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <p class="text-blue-300 uppercase tracking-widest text-sm mb-2">My work</p>
+      <h2 class="text-4xl md:text-5xl font-extrabold">Projects Gallery</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- About Me Page -->
+      <article class="group bg-blue-900 rounded-2xl overflow-hidden border border-blue-700 hover:-translate-y-2 transition shadow-lg">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/aboutme.png" alt="About Me Page"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">About Me Page</h3>
+          <p class="text-blue-300 mb-4">
+            A simple and responsive personal portfolio page built with HTML, CSS, and JavaScript.
+          </p>
+          <a href="https://hrtlyn.github.io/AboutMe/" target="_blank"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg transition inline-block">
+            Live Demo
+          </a>
+        </div>
+      </article>
+
+      <!-- Weekly Planner -->
+      <article class="group bg-blue-900 rounded-2xl overflow-hidden border border-blue-700 hover:-translate-y-2 transition shadow-lg">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/todo.png" alt="Weekly Planner"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Weekly Planner</h3>
+          <p class="text-blue-300 mb-4">
+            Organize your tasks efficiently with a weekly planner that allows adding, editing, and deleting tasks.
+          </p>
+          <a href="https://hrtlyn.github.io/WeeklyPlanner/" target="_blank"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg transition inline-block">
+            Live Demo
+          </a>
+        </div>
+      </article>
+
+      <!-- Calculator App -->
+      <article class="group bg-blue-900 rounded-2xl overflow-hidden border border-blue-700 hover:-translate-y-2 transition shadow-lg">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/calcu.png" alt="Calculator App"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Calculator App</h3>
+          <p class="text-blue-300 mb-4">
+            A simple calculator for basic math operations, built using HTML, CSS, and JavaScript.
+          </p>
+          <a href="https://hrtlyn.github.io/Calculator/" target="_blank"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg transition inline-block">
+            Live Demo
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-blue-700 py-6 text-center text-sm text-blue-300">
+  © 2025 Heartlyn Carino. All rights reserved.
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

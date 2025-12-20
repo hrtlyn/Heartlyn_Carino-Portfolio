@@ -1,0 +1,143 @@
+/* ==========================
+   PAGE TRANSITIONS
+========================== */
+
+/* Fade-in for page load */
+.page {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out for page exit */
+.page-exit {
+  opacity: 0;
+  transform: translateY(-25px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ==========================
+   NAVIGATION LINKS
+========================== */
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fb923c;
+  transform: translateY(-1px);
+}
+
+/* ==========================
+   MOBILE MENU LINKS
+========================== */
+.mobile-link {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-link:hover {
+  background-color: #1e293b;
+  color: #fb923c;
+}
+
+/* Mobile Menu Toggle */
+#menu-toggle:checked ~ ul#mobile-menu {
+  max-height: 500px; /* enough height to show all links */
+}
+
+#mobile-menu {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+.btn-primary {
+  padding: 12px 32px;
+  border-radius: 9999px;
+  background-color: #f97316; /* Tailwind orange-400 */
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.btn-outline {
+  padding: 12px 32px;
+  border-radius: 9999px;
+  border: 2px solid #fb923c;
+  color: #fb923c;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.btn-outline:hover {
+  background-color: #fb923c;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  padding: 12px 32px;
+  border-radius: 9999px;
+  border: 2px solid #f97316;
+  color: #f97316;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #f97316;
+  color: #1f2937; /* dark text for contrast */
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   IMAGES / PROFILE PHOTO
+========================== */
+.img-rounded {
+  border-radius: 9999px;
+  border: 4px solid #fb923c;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-rounded:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+/* ==========================
+   GENERAL RESPONSIVENESS
+========================== */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
